@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">TakeHomeTest</string>
+    <string name="btn_label_view_purchases">View Purchases</string>
+    <string name="tv_label_registration_date">Registration Date</string>
+    <string name="tv_label_phone_number">Phone Number</string>
+    <string name="tv_label_full_name">Full Name</string>
+    <string name="tv_label_username">Username</string>
+    <string name="serial_tag">Serial: </string>
+    <string name="description_tag">Description: </string>
+</resources>
