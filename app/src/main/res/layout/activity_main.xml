@@ -7,159 +7,166 @@
 
     </data>
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:background="@color/white"
-        android:padding="16dp"
-        tools:context=".MainActivity">
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:padding="16dp"
+            tools:context=".MainActivity">
 
 
-        <androidx.cardview.widget.CardView
-            android:id="@+id/cv_userimage"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            app:cardCornerRadius="150dp"
-            android:layout_gravity="center">
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_userimage"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                app:cardCornerRadius="150dp">
 
-            <ImageView
-                android:id="@+id/iv_userimage"
+                <ImageView
+                    android:id="@+id/iv_userimage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop" />
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/tv_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:hint="John Doe"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:scaleType="centerCrop" />
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
 
-        </androidx.cardview.widget.CardView>
+                <TextView
+                    android:id="@+id/tv_username_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/tv_label_username"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
 
-        <TextView
-            android:id="@+id/tv_user_name"
-            android:textSize="25sp"
-            android:hint="John Doe"
-            android:textStyle="bold"
-            android:layout_gravity="center"
-            android:textColor="@color/black"
-            android:layout_marginTop="16dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/tv_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:hint="\@something"
+                    android:textColor="@color/gray"
+                    android:textSize="15sp" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:orientation="horizontal">
+            </LinearLayout>
 
-            <TextView
-                android:id="@+id/tv_username_label"
-                android:text="@string/tv_label_username"
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_fullname_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/tv_label_full_name"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_full_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:hint="John Doe III"
+                    android:textColor="@color/gray"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_phonenumber_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/tv_label_phone_number"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_phonenumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:hint="+1(999) 222-1234"
+                    android:textColor="@color/gray"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_registrationdate_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/tv_label_registration_date"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_registrationdate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:hint="January 6, 2022"
+                    android:textColor="@color/gray"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_viewpurchases"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="@color/black"
-                android:textSize="15sp"
-                android:layout_weight="1" />
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="@string/btn_label_view_purchases" />
 
-            <TextView
-                android:id="@+id/tv_username"
-                android:textSize="15sp"
-                android:hint="\@something"
-                android:textColor="@color/gray"
-                android:gravity="end"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1" />
 
         </LinearLayout>
 
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:orientation="horizontal">
-
-            <TextView
-                android:id="@+id/tv_fullname_label"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/tv_label_full_name"
-                android:textColor="@color/black"
-                android:textSize="15sp"
-                android:layout_weight="1" />
-
-            <TextView
-                android:id="@+id/tv_full_username"
-                android:textSize="15sp"
-                android:hint="John Doe III"
-                android:textColor="@color/gray"
-                android:gravity="end"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:orientation="horizontal">
-
-            <TextView
-                android:id="@+id/tv_phonenumber_label"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/tv_label_phone_number"
-                android:textColor="@color/black"
-                android:textSize="15sp"
-                android:layout_weight="1" />
-
-            <TextView
-                android:id="@+id/tv_phonenumber"
-                android:textSize="15sp"
-                android:gravity="end"
-                android:textColor="@color/gray"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:hint="+1(999) 222-1234"
-                android:layout_weight="1" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:orientation="horizontal">
-
-            <TextView
-                android:id="@+id/tv_registrationdate_label"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/tv_label_registration_date"
-                android:textColor="@color/black"
-                android:textSize="15sp"
-                android:layout_weight="1" />
-
-            <TextView
-                android:id="@+id/tv_registrationdate"
-                android:textSize="15sp"
-                android:gravity="end"
-                android:textColor="@color/gray"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:hint="January 6, 2022"
-                android:layout_weight="1" />
-
-        </LinearLayout>
-
-        <Button
-            android:id="@+id/btn_viewpurchases"
-            android:layout_gravity="center"
-            android:layout_marginTop="20dp"
-            android:text="@string/btn_label_view_purchases"
-            android:gravity="center"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-
-
-    </LinearLayout>
+    </ScrollView>
 </layout>
